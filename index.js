@@ -8,9 +8,8 @@ bot.on("ready", function (){
 
 bot.on('message', message => {
 
-  if (message.content === 'ping') {
+  if (message.content === 'ping')
     message.channel.send('pong');
-  
   
   let blacklisted = ['bangsat', 'bangsad', 'bgsd', 'bgst', 'bangst', 'bngsat', 'anjing', 'njing', 'anying', 'anjng', 'goblok', 'gblk'];
   let foundInText = false;
@@ -21,8 +20,6 @@ bot.on('message', message => {
     message.delete();
     message.reply('Aduh dek... masih kecil gak boleh ngomong gitu. Chat kamu kakak hapus ya')
   }
-  }
-
 });
 
 bot.login(process.env.token);
