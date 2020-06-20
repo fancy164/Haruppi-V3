@@ -6,7 +6,5 @@ bot.on("ready", function (){
   bot.user.setActivity('Titah Kaisar Fancy', {type: "LISTENING"}).catch(console.error);
 });
 
-bot.on('message', message => {
-});
 
 bot.login(process.env.token);
