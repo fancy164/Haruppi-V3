@@ -7,7 +7,6 @@ bot.on("ready", function (){
 });
 
 bot.on('message', message => {
-
 });
 
 bot.login(process.env.token);
